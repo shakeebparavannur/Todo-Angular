@@ -1,0 +1,23 @@
+
+<div class="ms-3 mt-3">
+<div class="mb-3 col-6">
+    <label for="task">Enter the Task</label>
+    <input type="text" class="form-control" id="task" placeholder="task" [(ngModel)]="task">
+</div>
+<div class="mb-3 col-6">
+    <label for="task-desc">Enter the description</label>
+    <textarea class="form-control" id="task-desc" rows="3" [(ngModel)]="taskdesc"></textarea>
+</div>
+<div class="mb-3 col-6">
+    <select class="form-select" aria-label="Default select example" [(ngModel)]="priority">
+        <option selected>Select the priority</option>
+        <option value="crictical">Crictical</option>
+        <option value="urgent">Urgent</option>
+        <option value="notUrgent">Not Urgent</option>
+      </select>
+</div>
+<div>
+    <button class="btn btn-success" (click)="addTask()">Submit</button>
+</div>
+
+</div>
