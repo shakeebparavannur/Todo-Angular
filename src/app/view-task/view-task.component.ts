@@ -16,7 +16,6 @@ export class ViewTaskComponent implements OnInit {
    const taskIdFromRoute = Number(routeParams.get('taskId'))
    this.task=this.taskservice.taskList.find(task => task.taskId === taskIdFromRoute)
    console.log(this.task);
-   
  }
 
 }
